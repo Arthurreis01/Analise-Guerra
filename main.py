@@ -94,7 +94,7 @@ news = get_news(keyword)
 len(news)
 
 # Para imprimir as notícias no Streamlit
-st.write(f"`Acompanhe as últimas notícias do site globo em` '{keyword}':")
+st.title(f"`Acompanhe as últimas notícias do site globo em '{keyword}':`")
 for title, link in news.items():
     st.write(f"[{title}]({link})")
 

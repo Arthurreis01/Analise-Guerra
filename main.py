@@ -6,7 +6,7 @@ from geopy.extra.rate_limiter import RateLimiter
 
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 # PUxar uma base de dados de compras de imoveis
-st.header('Falaties in conflite Palestine x Israel 2000 to 2023')
+st.header('Análise conflito Palestine x Israel 2000 to 2023')
 
 
 df = pd.read_csv("analysis_conflit_Israel.csv", sep=",")
@@ -94,7 +94,7 @@ news = get_news(keyword)
 len(news)
 
 # Para imprimir as notícias no Streamlit
-st.write(f"Acompanhe as últimas notícias do site globo em '{keyword}':")
+st.write(f"`Acompanhe as últimas notícias do site globo em` '{keyword}':")
 for title, link in news.items():
     st.write(f"[{title}]({link})")
 

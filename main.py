@@ -9,7 +9,7 @@ st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 st.header('Falaties in conflite Palestine x Israel 2000 to 2023')
 
 
-df = pd.read_csv("C:\\Users\\arthu\\OneDrive\\Área de Trabalho\\MATERIAL DE ESTUDO\\ADM FINANCEIRA\\analysis_conflit_Israel.csv", sep=",")
+df = pd.read_csv("analysis_conflit_Israel.csv", sep=",")
 
 df['date_of_event'] = pd.to_datetime(df['date_of_event'])
 
